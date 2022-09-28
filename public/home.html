@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BestAnimes</title>
+
+    <script src="./js/header.js"></script>
+    <script src="./js/funcoes.js"></script>
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet"> -->
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <h1 class="titulo">BestAnimes</h1>
+            <h2 class="subTitulo">Olá, &nbsp <span id="b_usuario"></span></h2>
+
+            <ul class="navbar">
+
+                <a class="btnsNav" href="./home.html">Início</a>
+                <a class="btnsNav" id="btn_lancamentos" onclick="lancamentos()">Lançamentos</a>
+                <a class="btnsNav" id="btn_recomendados" onclick="recomendados()">Recomendados</a>
+                <a class="btnsNav" id="btn_filmes" onclick="filmes()">Filmes</a>
+                <a class="btnsNav" id="btn_mangas" onclick="mangas()">Mangas</a>
+                <a class="btnDash" href="./dashboard/dashboard.html">Comunidade</a>
+                <a class="btnSair" href="./index.html">Sair</a>
+            </ul>
+
+        </div>
+    </div>
+
+    <div id="espacamento"></div>
+
+    <div id="index">
+
+        <section id="animes">
+
+            <div class="todos" id="areaAnimes_1" style="display: block;">
+
+                <div class="container">
+                    <div class="fila">
+
+                        <div class="card">
+                            <div class="img"><img src="./img/Animes/fate.jpg" alt=""></div>
+                            <h1 class="title">Fate stay night</h1>
+                            <button class="btn">Assistir</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="img"><img src="./img/Animes/attack.jpg" alt=""></div>
+                            <h1 class="title">Attack on Titans</h1>
+                            <button class="btn">Assistir</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="img"><img src="./img/Animes/DragonBall.jpeg" alt=""></div>
+                            <h1 class="title">Dragon Ball GT</h1>
+                            <button class="btn">Assistir</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="img"><img src="./img/Animes/konosuba.webp" alt=""></div>
+                            <h1 class="title">Konosuba</h1>
+                            <button class="btn">Assistir</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="fila">
+
+                        <div class="card">
+                            <div class="img"><img src="./img/Animes/bunny.jpg" alt=""></div>
+                            <h1 class="title">Bunny girl senpai</h1>
+                            <button class="btn">Assistir</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="img"><img src="./img/Animes/nanatsu.jpg" alt=""></div>
+                            <h1 class="title">Nanatsu no taizai</h1>
+                            <button class="btn">Assistir</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="img"><img src="./img/Animes/kimetsu.jpg" alt=""></div>
+                            <h1 class="title">Kimetsu no yaiba</h1>
+                            <button class="btn">Assistir</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="img"><img src="./img/Animes/super11.jpg" alt=""></div>
+                            <h1 class="title">Super 11</h1>
+                            <button class="btn">Assistir</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="fila">
+
+                        <div class="card">
+                            <div class="img"><img src="./img/Animes/sword.jpg" alt=""></div>
+                            <h1 class="title">Sword art online</h1>
+                            <button class="btn">Assistir</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="img"><img src="./img/Animes/rezero.jpg" alt=""></div>
+                            <h1 class="title">Re: Zero</h1>
+                            <button class="btn">Assistir</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="img"><img src="./img/Animes/fullmetal.jpg" alt=""></div>
+                            <h1 class="title">Fullmetal Alchemist </h1>
+                            <button class="btn">Assistir</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="img"><img src="./img/Animes/beyblade.webp" alt=""></div>
+                            <h1 class="title">Bayblade</h1>
+                            <button class="btn">Assistir</button>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="container">
+                    <div class="fila">
+
+                        <div class="card">
+                            <div class="img"><img src="./img/Animes/slime.jpg" alt=""></div>
+                            <h1 class="title">Tensei Shitara</h1>
+                            <button class="btn">Assistir</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="img"><img src="./img/Animes/dragonfilme.jpg" alt=""></div>
+                            <h1 class="title">Dragon Ball o filme</h1>
+                            <button class="btn">Assistir</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="img"><img src="./img/Animes/voz.png" alt=""></div>
+                            <h1 class="title">A voz do silêncio</h1>
+                            <button class="btn">Assistir</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="img"><img src="./img/Animes/yourname.jpg" alt=""></div>
+                            <h1 class="title">Your Name</h1>
+                            <button class="btn">Assistir</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="fila">
+
+                        <div class="card">
+                            <div class="img"><img src="./img/Animes/kaijumanga.jpg" alt=""></div>
+                            <h1 class="title">Kaiju no 8</h1>
+                            <button class="btn">Ler</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="img"><img src="./img/Animes/dicemaanga.jpg" alt=""></div>
+                            <h1 class="title">DICE</h1>
+                            <button class="btn">Ler</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="img"><img src="./img/Animes/berserkmanga.jpg" alt=""></div>
+                            <h1 class="title">Berserk</h1>
+                            <button class="btn">Ler</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="img"><img src="./img/Animes/blattmanga.jpg" alt=""></div>
+                            <h1 class="title">Übel Blatt</h1>
+                            <button class="btn">Ler</button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+                <div class="lancamentos" id="areaAnimes_2" style="display: none;">
+                   
+                    <div class="container">
+                        <div class="fila">
+    
+                            <div class="card">
+                                <div class="img"><img src="./img/Animes/fate.jpg" alt=""></div>
+                                <h1 class="title">Fate stay night</h1>
+                                <button class="btn">Assistir</button>
+                            </div>
+    
+                            <div class="card">
+                                <div class="img"><img src="./img/Animes/attack.jpg" alt=""></div>
+                                <h1 class="title">Attack on titans</h1>
+                                <button class="btn">Assistir</button>
+                            </div>
+    
+                            <div class="card">
+                                <div class="img"><img src="./img/Animes/beyblade.webp" alt=""></div>
+                                <h1 class="title">beyblade</h1>
+                                <button class="btn">Assistir</button>
+                            </div>
+    
+                            <div class="card">
+                                <div class="img"><img src="./img/Animes/super11.jpg" alt=""></div>
+                                <h1 class="title">Super 11</h1>
+                                <button class="btn">Assistir</button>
+                            </div>
+    
+                        </div>
+                    </div>
+                   
+                </div>
+
+
+                <div class="recomendados" id="areaAnimes_3" style="display: none;">
+                    <div class="container">
+                        <div class="fila">
+
+
+
+                            <div class="card">
+                                <div class="img"><img src="./img/Animes/sword.jpg" alt=""></div>
+                                <h1 class="title">Sword art online</h1>
+                                <button class="btn">Assistir</button>
+                            </div>
+
+                            <div class="card">
+                                <div class="img"><img src="./img/Animes/kimetsu.jpg" alt=""></div>
+                                <h1 class="title">Kimetsu no yaiba</h1>
+                                <button class="btn">Assistir</button>
+                            </div>
+
+                            <div class="card">
+                                <div class="img"><img src="./img/Animes/konosuba.webp" alt=""></div>
+                                <h1 class="title">Konosuba</h1>
+                                <button class="btn">Assistir</button>
+                            </div>
+                            <div class="card">
+                                <div class="img"><img src="./img/Animes/bunny.jpg" alt=""></div>
+                                <h1 class="title">Bunny girl senpai</h1>
+                                <button class="btn">Assistir</button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="fila">
+
+                            <div class="card">
+                                <div class="img"><img src="./img/Animes/nanatsu.jpg" alt=""></div>
+                                <h1 class="title">Nanatsu no taizai</h1>
+                                <button class="btn">Assistir</button>
+                            </div>
+
+                            <div class="card">
+                                <div class="img"><img src="./img/Animes/fullmetal.jpg" alt=""></div>
+                                <h1 class="title">Fullmetal Alchemist</h1>
+                                <button class="btn">Assistir</button>
+                            </div>
+
+                            <div class="card">
+                                <div class="img"><img src="./img/Animes/slime.jpg" alt=""></div>
+                                <h1 class="title">Tensei Shitara</h1>
+                                <button class="btn">Assistir</button>
+                            </div>
+                            <div class="card">
+                                <div class="img"><img src="./img/Animes/rezero.jpg" alt=""></div>
+                                <h1 class="title"> Re:Zero</h1>
+                                <button class="btn">Assistir</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="filmes" id="areaAnimes_4" style="display: none;">
+                    <div class="container">
+                        <div class="fila">
+
+                            <div class="card">
+                                <div class="img"><img src="./img/Animes/dragonfilme.jpg" alt=""></div>
+                                <h1 class="title">Dragon Ball o filme</h1>
+                                <button class="btn">Assistir</button>
+                            </div>
+
+                            <div class="card">
+                                <div class="img"><img src="./img/Animes/voz.png" alt=""></div>
+                                <h1 class="title">A voz do silêncio</h1>
+                                <button class="btn">Assistir</button>
+                            </div>
+
+                            <div class="card">
+                                <div class="img"><img src="./img/Animes/yourname.jpg" alt=""></div>
+                                <h1 class="title">Your Name</h1>
+                                <button class="btn">Assistir</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                    <div class="mangas" id="areaAnimes_5" style="display: none;">
+                        <div class="container">
+                            <div class="fila">
+
+                                <div class="card">
+                                    <div class="img"><img src="./img/Animes/kaijumanga.jpg" alt=""></div>
+                                    <h1 class="title">Kaiju no 8</h1>
+                                    <button class="btn">Ler</button>
+                                </div>
+
+                                <div class="card">
+                                    <div class="img"><img src="./img/Animes/dicemaanga.jpg" alt=""></div>
+                                    <h1 class="title">DICE</h1>
+                                    <button class="btn">Ler</button>
+                                </div>
+
+                                <div class="card">
+                                    <div class="img"><img src="./img/Animes/berserkmanga.jpg" alt=""></div>
+                                    <h1 class="title">Berserk</h1>
+                                    <button class="btn">Ler</button>
+                                </div>
+
+                                <div class="card">
+                                    <div class="img"><img src="./img/Animes/blattmanga.jpg" alt=""></div>
+                                    <h1 class="title">Übel Blatt</h1>
+                                    <button class="btn">Ler</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+        </section>
+
+    </div>
+    <script src="js/home.js"></script>
+</body>
+
+</html>

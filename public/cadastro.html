@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BestAnimes</title>
+
+
+    <script src="./js/funcoes.js"></script>
+
+    <link rel="icon" href="./assets/icon/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="./js/cadastro.js"></script>
+    <link rel="stylesheet" href="css/cadastro.css">
+</head>
+
+<body>
+
+    <section id="index_cadastro">
+        <div class="box_cadastro">
+            <!-- <div class="alerta_erro">
+            <div class="card_erro" id="cardErro">
+                <span id="mensagem_erro"></span>
+            </div>
+        </div>-->
+
+            <div class="container">
+                <div class="card_cadastro_1" id="cadastro" style="display: flex;">
+
+                    <div class="input_cadastro">
+                        <input id="nome_input" type="text" placeholder="Informe seu nome:">
+                    </div>
+
+                    <div class="input_cadastro">
+                        <input id="email_input" type="text" placeholder="Informe seu e-mail:">
+                    </div>
+
+                    <div class="input_cadastro">
+                        <div id="checkbox">
+                            <img id="img_ocultar" src="img/oculto.png" alt="ocultar" style="width: 25px;"
+                                onclick="mostrar()">
+                        </div>
+                        <input id="in_senha" type="password" placeholder="Informe sua senha:">
+                    </div>
+
+                    <div class="input_cadastro">
+                        <input id="in_senha2" type="password" placeholder="Confirme sua senha:">
+                    </div>
+
+                    <div class="sel_favorito">
+                        <select id="categoria_favorita">
+                            <option value="">-Selecione uma categoria de anime-</option>
+                            <option value="100">Isekai</option>
+                            <option value="101">Comédia</option>
+                            <option value="102">Aventura</option>
+                            <option value="103">Romance</option>
+                            <option value="104">slice of life</option>
+                            <option value="105">Mistério</option>
+                            <option value="106">Drama</option>
+                            <option value="107">Sci-Fi</option>   
+                        </select>
+                    </div>
+
+                    <div class="btn_container">
+                        <div class="btn_cadastro">
+                            <a class="a_cadastro" id="btn_1" onclick="avancar_1()">Avançar</a>
+                        </div>
+                    </div>
+
+                    <span>Você já tem conta?<a class="a_logar-se" href="login.html">Logar-se</a></span>
+
+
+
+                    <a class="btn_cancelar" href="index.html">Cancelar</a>
+                </div>
+
+
+                <div class="card_cadastro_2" id="pacotes" style="display: none;">
+
+                    <div id="div_captcha" style="background-color: white; font-size: 40px;"></div>
+
+                    <input id="in_captcha" placeholder="Informe o código acima" style="margin-top:40px; width: 300px; font-size: 25px;" type="text">
+             
+                    <div class="btn_container">
+                        <div class="btn_cadastro">
+                            
+                            
+                            <a class="a_cadastro" id="btn_2" onclick="cadastrar()">Finalizar</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+    </section>
+
+</body>
+
+</html>
+<script>
+    div_captcha.innerHTML = gerarCaptcha(10); 
+</script>

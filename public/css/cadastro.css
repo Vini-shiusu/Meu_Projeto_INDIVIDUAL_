@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';
+}
+
+body {
+  background-color: #2a2b2b;
+  overflow-x: hidden;
+
+}
+
+#espacamento {
+  height: 6vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 86vw;
+  display: flex;
+}
+
+
+#index_cadastro {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.box_cadastro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+.card_cadastro_1 {
+  margin: auto;
+  display: flex;
+  height: 80vh;
+  width: 40vw;
+  background-color: #0000007e;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #ffe100;
+  border-radius: 20%;
+  overflow: hidden;
+}
+
+
+
+.input_cadastro {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+
+.input_cadastro img {
+  position: absolute;
+  left: 92%;
+  bottom: calc(100% - 10px);
+  cursor: pointer;
+}
+
+input {
+  width: 100%;
+  margin-bottom: 7%;
+  border: none;
+  border-bottom: 2px solid #8f8f8f;
+  outline: 0px;
+  background-color: transparent;
+  color: #ffffff;
+  text-indent: 4%;
+}
+
+::-webkit-input-placeholder {
+
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.sel_favorito {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-bottom: 3vh;
+}
+
+#categoria_favorita{
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  padding: 15px 45px;
+  background-color: #000000;
+  border:solid #ffe100;
+  color: #ffffff;
+  justify-content: flex-start;
+  text-align: justify;
+}
+
+.btn_container {
+  z-index: 1;
+}
+
+.btn_cadastro {
+  display: flex;
+  position: relative;
+  width: 20vw;
+  height: 10vh;
+  border-radius: 7px;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.btn_cadastro::before {
+  content: "";
+  position: absolute;
+  height: 50vh;
+  width: 50vw;
+  background: #ffe100;
+}
+
+.a_cadastro {
+  font-size: 30px;
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  width: 98%;
+  height: 90%;
+  color: #ffffff;
+  background-color: #000000;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.a_cadastro:hover {
+  background-color: #2a2b2b;
+}
+
+span {
+  width: 40%;
+  font-size: 16px;
+  color: #ffffff;
+  margin-top: 2vh;
+}
+
+.a_logar-se {
+  font-size: 18px;
+  margin-left: 3%;
+  color: #ffe100;
+}
+
+.btn_cancelar {
+  margin-top: 3%;
+  font-size: 20px;
+  display: flex;
+  width: 15%;
+  height: 5%;
+  color: #ffe100;
+  border-bottom: 2px solid #ffe100;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+
+.card_cadastro_2 {
+  margin: auto;
+  display: flex;
+  height: 80vh;
+  width: 40vw;
+  background-color: #0000007e;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #ffe100;
+  border-radius: 20%;
+  overflow: hidden;
+}
+
+.input_pagamento {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+  margin-bottom: 10vh;
+}
+
+.h1_valorTotal {
+  display: flex;
+  margin-bottom: 4vh;
+  text-align: justify;
+  color: #ffffff;
+  font-size: 25px;
+}
+
+#sel_meses {
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  padding: 15px 45px;
+  background-color: #000;
+  border: solid #ffe100;
+  color: #ffffff;
+  justify-content: flex-start;
+  text-align: justify;
+}
+
+
+.btn_voltar {
+  margin-top: 2%;
+  font-size: 20px;
+  display: flex;
+  width: 10%;
+  height: 5%;
+  color: #ffe100;
+  border-bottom: 2px solid #ffe100;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}

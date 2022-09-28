@@ -1,0 +1,150 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';
+  }
+  
+  body {
+    background-color: #2a2b2b;
+    overflow-x: hidden;
+  
+  }
+  
+  #espacamento {
+    height: 6vh;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .container {
+    width: 86vw;
+    display: flex;
+  }
+  
+  /*Inicio header*/
+  .header {
+    background-color: #00000094;
+    border-bottom: 2px solid #ffe100;
+    display: flex;
+    height: 8vh;
+    width: 100%;
+    justify-content: center;
+    position: fixed;
+    overflow: hidden;
+    z-index: 2;
+  }
+  
+  .header .container {
+    justify-content: space-between;
+  }
+  
+  .header a {
+    color: #ffffff;
+  }
+  
+  .agora {
+    font-weight: 800;
+  }
+  
+  .navbar {
+    width: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    color: #ffffff;
+  }
+  
+  
+  .titulo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 500;
+  }
+  
+  .li_login {
+    width: 70%;
+    border-radius: 5px;
+    font-size: 25px;
+    font-weight: 600;
+  }
+  
+  .li_login:hover {
+    color: #cac9ca;
+
+  }
+  
+/* fim do header */
+
+#parte {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../img/fundo_anime.jpg  );
+    background-size: cover;
+}
+
+#parte::before {
+    content: '';
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background: #46454563
+}
+
+.intro {
+    margin: auto;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #ffffff;
+    gap: 5vh;
+    font-weight: 600;
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+.p1_parte1 {
+    font-size: 20px;
+    width: 40%;
+}
+
+.p2_parte1 {
+    font-size: 20px;
+}
+
+.a_parte1 {
+    background-color: #ffe10088;
+    border: 3px solid #000;
+    color: #000;
+    padding: 15px 80px;
+    border-radius: 5px;
+    font-size: 30px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.a_parte1:hover{
+    background-color: #fffb00;
+}
+
